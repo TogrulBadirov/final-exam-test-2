@@ -1,0 +1,29 @@
+#flower-pricing {
+  background: url("https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1-1-1085x595.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  .container {
+    padding-top: 100px;
+    .section-heading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #0c5b47;
+        p{
+            font-style: italic;
+        }
+        h3{
+            font-size: 50px;
+            font-weight: 400;
+        }
+    }
+    .product-container{
+        padding: 50px;
+        
+    }
+  }
+}

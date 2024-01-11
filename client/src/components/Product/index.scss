@@ -1,0 +1,41 @@
+.card{
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    background-color: transparent !important;
+    border: none !important;
+    img{
+        max-width: 100%;
+    }
+    .product-image{
+        position: relative;
+        overflow: hidden;
+        &:hover .image-icons{
+           height: 50px;
+        }
+        .image-icons{
+            transition: 0.3s ease;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #00b66777;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            // padding: 10px 0;
+            button{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 24px;
+                margin: 0 20px;
+                color: #fff;
+            }
+        }
+    }
+}

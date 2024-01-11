@@ -1,0 +1,101 @@
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(16, 99, 78, 0.9);
+    z-index: 5;
+    #desktop-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        .logo{
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            span{
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+        .nav-actions{
+            display: flex;
+            align-items: center;
+            .nav-menu{
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .nav-elements{
+                    padding: 20px 10px;
+                    a{
+                        text-decoration: none;
+                        color: #ffffffd8;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    #mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        display: none;
+        .nav-top-part{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            .logo{
+                span{
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+            .nav-icon-burger{
+                button{
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    font-size: 22px;
+                }
+
+            }
+        }
+        .sub-menu{
+            height: max-content;
+            display: none;
+            &.active{
+                display: block;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .nav-elements{
+                    padding: 10px 10px;
+                    a{
+                        text-decoration: none;
+                        color: #ffffffd8;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    nav{
+        #desktop-nav{
+            display: none;
+        }
+        #mobile-nav{
+            display: block;
+        }
+    }
+}
